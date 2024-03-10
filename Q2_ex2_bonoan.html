@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Filipino Horror Movie Reviews</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-beta2/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-image: url('https://img.freepik.com/premium-photo/red-background-scary-bloody-wall-white-wall-with-blood-splatter-halloween-background_526818-5230.jpg');
+            background-size: cover;
+            color: #fff; /* White text color */
+        }
+
+        h1 {
+            color: #fff; /* White heading text color */
+        }
+
+        .logo {
+            max-width: 100px;
+            max-height: 100px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .movie-info {
+            background-color: #660000;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+
+        .movie-info h2 {
+            color: #ff6666;
+            font-weight: normal; /* Less bold */
+        }
+
+        .movie-info p,
+        .movie-info a {
+            color: #fff; /* White text color */
+            font-weight: normal; /* Less bold */
+        }
+
+        /* Chart container styling */
+        #chart-container {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+    </style>
+
+    <!-- Chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Movies</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Genre</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+        </li>
+    </ul>
+</nav>
+    <!-- Home Page -->
+    <div id="home" class="container text-center mt-5">
+        <img src="https://static.wikia.nocookie.net/logopedia/images/5/55/Star_Cinema_-_ABS-CBN_Film_Productions%2C_Inc._Logo.png/revision/latest/scale-to-width-down/250?cb=20220411113615" alt="Logo" class="logo mx-auto d-block">
+        <h1 class="text-center">Filipino Horror Movie Reviews </h1>
+    </div>
+
+    <!-- Movies Page -->
+    <div id="movies" class="container mt-4 mb-4">
+        <!-- Movie Review 1 -->
+        <div class="movie-info">
+            <h2>The Healing</h2>
+            <p>A faith healer's power causes paranormal events and a rash of suicides and murders after Seth witnesses a miracle when her wheelchair-bound father Odong is healed by Manang Elsa a faith healer.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/en/4/4c/The_Healing_%28film%29.jpg" class="img-fluid rounded" alt="Movie 1 Poster">
+            <p><a href="https://www.example.com/movie1" target="_blank"></a></p>
+        </div>
+
+        <!-- Movie Review 2 -->
+        <div class="movie-info">
+            <h2>Clarita</h2>
+            <p>A young woman is apprehended and held by police when they suspect that she is possessed by a demon. After learning that a group of doctors was killed by supernatural forces, Fathers Salvador and Benedicto have their faith tested when they are tasked to perform an exorcism on a possessed woman named Clarita</p>
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Clarita_2019_poster.jpg" class="img-fluid rounded" alt="Movie 2 Poster">
+            <p><a href="Clarita" target="_blank</a></p>
+        </div>
+
+        <!-- Movie Review 3 -->
+        <div class="movie-info>">
+            <h2>In My Mothers skin</h2>
+            <p>Set during World War II, the film's plot follows a young girl who, while tending to her dying mother, becomes acquainted with a flesh-eating fairy. The film premiered at Sundance as part of the festival's "Midnight" section on January 21, 2023</p>
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEYmIgQj1s5VhMiOXMgRzITDR3Bxjj8mizuN7isGPPi0hDh6Hw" class="img-fluid rounded" alt="Movie 3 Poster">
+            <p><a href="https://www.example.com/movie3" target="_blank"></a></p>
+        </div>
+    </div>
+
+    <!-- Genre Page -->
+    <div id="genre" class="container mt-4 mb-4">
+        <!-- Your genre content here... -->
+    </div>
+
+    <!-- Contact Us Page -->
+    <div id="contact" class="container text-center mt-4 mb-4">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feedback, or suggestions, feel free to reach out to us:</p>
+        <ul>
+            <li>Email: info@moviereview.com</li>
+            <li>Phone: 1-800-MOVIE-REVIEW</li>
+            <li>Address: 123 Movie St., Greenhills, San Juan, Philippines</li>
+        </ul>
+    </div>
+
+    <!-- Search Form -->
+    <div id="search" class="container text-center mt-4 mb-4">
+        <h2>Search Movies</h2>
+        <form class="form">
+            <div class="mb-3">
+                <label class="form-label" for="inputSearch">Search</label>
+                <input type="text" class="form-control" id="inputSearch" placeholder="Enter movie title">
+            </div>
+            <button type="submit" class="btn btn-danger">Search</button>
+        </form>
+    </div>
+
+    <!-- Chart Container -->
+    <div id="chart-container" class="container mt-4 mb-4">
+        <h2 class="text-center">Ratings Chart</h2>
+        <!-- Your existing chart content here... -->
+        <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js (required for some Bootstrap components) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-beta2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Your Chart.js initialization and data here...
+        // Sample data for illustration purposes
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['The Healing', 'Clarita', 'In My Mothers skin'],
+                datasets: [{
+                    label: 'Ratings',
+                    data: [5, 4, 4.5],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
